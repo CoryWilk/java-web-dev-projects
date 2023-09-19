@@ -1,16 +1,22 @@
 package org.launchcode;
 
 public class MenuItem {
+    private String name;
     private double price;
     private String description;
     private String category;
     private boolean isNew;
 
-    public MenuItem(double p, String d, String c, boolean iN) {
-        this.price = p;
-        this.description = d;
-        this.category = c;
+    public MenuItem(String name, double price, String description, String category, boolean iN) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
         this.isNew = iN;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPrice(double price) {
@@ -28,5 +34,6 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
 }
 
